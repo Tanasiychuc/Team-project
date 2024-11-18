@@ -1,19 +1,87 @@
-<header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+<div class="header-container">
+  <nav class="header-nav">
+    <a class="logo" href="./index.html">watchcharm</a>
+    <ul class="nav-list">
+      <li>
+        <a class="nav-link current" href="./index.html">Home</a>
+      </li>
+      <li><a class="nav-link" href="#about-us-main">About Us</a></li>
+      <li><a class="nav-link" href="#catalog-main">Catalog</a></li>
+      <li><a class="nav-link" href="#sale-main">Sale</a></li>
+      <li><a class="nav-link" href="#reviews-main">Reviews</a></li>
+      <li><a class="nav-link" href="">Contact Us</a></li>
+
+      <div class="header-icons">
+        <li>
+          <a href="https://www.facebook.com/goITclub/">
+            <svg class="item" width="36" height="36">
+              <use href="/img/icons.svg#icon-facebook" class="svg-icons"></use>
+            </svg>
+          </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li>
+          <a href="https://www.instagram.com/goitclub/">
+            <svg class="item" width="36" height="36">
+              <use href="/img/icons.svg#icon-instagram" class="svg-icons"></use>
+            </svg>
+          </a>
         </li>
-      </ul>
-    </nav>
+        <li>
+          <a href="https://www.youtube.com/c/GoIT">
+            <svg class="item" width="36" height="36">
+              <use href="/img/icons.svg#icon-youtube" class="svg-icons"></use>
+            </svg>
+          </a>
+        </li>
+      </div>
+    </ul>
+  </nav>
+  <button class="burger-btn" type="button" data-menu-open>
+    <svg class="burger-icon" width="34" height="34">
+      <use href="/img/icons.svg#icon-menu"></use>
+    </svg>
+  </button>
+</div>
+
+<div class="mobile-menu" data-menu>
+  <button type="button" class="mobile-menu-close" data-menu-close>
+    <svg class="menu-icon-close">
+      <use href="/img/icons.svg#icon-cross"></use>
+    </svg>
+  </button>
+  <nav class="mobile-menu-nav">
+    <ul class="mobile-menu-list">
+      <li>
+        <a class="mobile-nav-link mobile-current" href="./index.html">Home</a>
+      </li>
+      <li><a class="mobile-nav-link" href="">About Us</a></li>
+      <li><a class="mobile-nav-link" href="">Catalog</a></li>
+      <li><a class="mobile-nav-link" href="">Sale</a></li>
+      <li><a class="mobile-nav-link" href="">Reviews</a></li>
+      <li><a class="mobile-nav-link" href="">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div>
+    <ul class="icons-mobile-menu">
+      <li class="mobile-icon-item">
+        <a class="icon-link" href="">
+          <svg class="team-icon">
+            <use href="/img/icons.svg#icon-facebook"></use></svg
+        ></a>
+      </li>
+      <li class="mobile-icon-item">
+        <a class="icon-link" href="">
+          <svg class="team-icon">
+            <use href="/img/icons.svg#icon-instagram"></use></svg
+        ></a>
+      </li>
+      <li class="mobile-icon-item">
+        <a class="icon-link" href="">
+          <svg class="team-icon">
+            <use href="/img/icons.svg#icon-youtube"></use></svg
+        ></a>
+      </li>
+    </ul>
   </div>
-</header>
+</div>
